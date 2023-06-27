@@ -1,0 +1,20 @@
+ <!-- find circle area -->
+<!DOCTYPE html>
+<html>
+    <head><title>circle area</title>
+    </head>
+    <body>
+        <h1>Circle area</h1>
+        <h2 id="circle"></h2>
+
+        <script>
+         const r = parseFloat(prompt("Enter Radius of Circle :"));
+         const pi = 3.14;
+            
+        let Area = pi * r * r;
+
+        document.getElementById('circle').innerHTML= 'Area of Circle : ' + " " + Area;
+        </script>
+
+    </body>
+</html>

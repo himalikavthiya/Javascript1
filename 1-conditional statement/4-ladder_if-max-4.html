@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Max-4 in Ladder if</title>
+    </head>
+   
+    <body>
+        <h1>Useing Ladder if Max-4 value</h1>
+        <h2 id ='max'></h2>
+
+        <script>
+         let a=100,b=399,c=00,d=70;
+        // const a = parseInt(prompt("Enter A value: "));  
+        // const b = parseInt(prompt("Enter B value: "));
+        // const c = parseInt(prompt("Enter C value: "));
+        // const d = parseInt(prompt("Enter D value: "));
+        let Great;
+            if(a>b && a>c && a>d){
+                  Great ='A is Great';
+               
+            }else if(b>c && b>d && b>a){
+                Great ='B is Great';
+                
+            }else if(c>d && c>a && c>b ){
+                Great ='C is Great'
+         
+            }else{
+                Great ='D is Great'
+            }
+
+            document.getElementById('max').innerHTML = Great;
+
+        </script>
+
+    </body>
+</html>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Sequence series</title>
+    </head>
+    <body>
+
+        <h1>Sequence series</h1>
+        
+        <script>
+
+            // let seq=0;
+           let text = "";
+            let i=1;
+
+            const n =parseInt(prompt("Enter length of series : "));
+            let temp=1;
+            for(i =1; i<=n; i++){
+
+                text += temp + '</br>' ;
+                temp *=2;
+            }
+            document.write("Your Series is : " + '</br>',text)
+        </script>
+    </body>
+
+</html>

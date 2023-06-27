@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+}
+.bttn{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 6%;
+    
+}
+#btn1{
+    margin-right: 20px;
+}
+.table-container {
+    border: 1px solid #ccc;
+    padding: 76px;
+    margin-bottom: 20px;
+    background-color: #f8f8f8;
+  }
+.my-table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    border: 2px solid black;
+  }
+  
+  .my-table th,
+  .my-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .my-table th {
+    background-color: #c7a3a3;
+    text-align: center;
+  }
+  
+  .my-table .btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>max-4</title>
+    <style>
+        h1{
+            color:#61369f;
+        }
+        #demo{
+            color:#091e59;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Find a Gretest value</h1>
+    <h2 id="demo"></h2>
+
+    <script>
+        // let a=100,b=3,c=800,d=70;
+        const a = parseInt(prompt("Enter A value: "));  
+        const b = parseInt(prompt("Enter B value: "));
+        const c = parseInt(prompt("Enter C value: "));
+        const d = parseInt(prompt("Enter D value: "));
+        // nested if
+        if(a>b){
+            if(a>c){
+                if(a>d){
+                    document.getElementById('demo').innerHTML ='A =' + a + " " + 'is gretest value';
+                }else{
+                    document.getElementById('demo').innerHTML ='D =' + d + " " + 'is gretest value';
+                }
+            }else{
+                if(c>d){
+                    document.getElementById('demo').innerHTML ='C =' + c + " " + 'is gretest value';
+                }else{
+                    document.getElementById('demo').innerHTML ='D =' + d + " " + 'is gretest value';
+                }
+            }
+        }else{
+            if(b>c){
+                if(b>d){
+                    document.getElementById('demo').innerHTML ='B =' + b + " " + 'is gretest value';
+                }else{
+                    document.getElementById('demo').innerHTML ='D =' + d + " " + 'is gretest value';
+                }
+            }else{
+                if(c>d){
+                    document.getElementById('demo').innerHTML ='C =' + c + " " + 'is gretest value';
+                }else{
+                    document.getElementById('demo').innerHTML ='D =' + d + " " + 'is gretest value';
+                }
+            }
+        }
+    </script>
+
+    
+</body>
+</html>

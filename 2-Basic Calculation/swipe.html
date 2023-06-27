@@ -1,0 +1,28 @@
+ <!-- javascript Program to perform a swapping of two variables.(compulsory user input) -->
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>Swapping</title>
+    </head>
+    <body>
+        <h1>Swapping of two Variables</h1>
+        <button onclick ="swapping(a,b)">Swap</button> 
+        <h2 id="swap"></h2>
+        
+        <script>
+        //  let a=60,b=80;
+        const a = parseInt(prompt('Enter First Number : '));
+        const b = parseInt(prompt('Enter Second Number : '));
+
+        document.write('a =' ,a);
+        document.write('b =' ,b);
+        
+        function swapping(a,b){
+            a=a+b;
+            b=a-b;
+            a=a-b;
+            document.getElementById('swap').innerHTML = `after swapping ${a},${b}`;
+        }
+        </script>
+    </body>
+ </html>

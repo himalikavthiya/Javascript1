@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gross Salary</title>
+    </head>
+    <body>
+        <h1>Find Gross Salary</h1>
+        <h2 id ="basic"></h2>
+        <h2 id="gross"></h2>
+
+        <script>
+
+            const base_salary = parseInt(prompt("Enter Basic Salary :"));
+            document.getElementById('basic').innerHTML = 'your Basic Salary is :' + " " + base_salary;
+
+            function gross_salary(){
+                let hra = base_salary*10/100;
+                let da= base_salary*5/100;
+                let ta= base_salary*8/100;
+                 gs = base_salary + hra + da + ta;
+            }
+             gross_salary();
+             document.getElementById('gross').innerHTML = 'congratulation your Gross Salary is :' + " " + gs;
+            
+        </script>
+    </body>
+</html>

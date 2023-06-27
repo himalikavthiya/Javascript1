@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration_form</title>
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/media.css"/>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title" id="heading"> Registration Form </div>
+        <form action="#" name="myform" onsubmit="return validateform()">
+            <div class="user-detail">
+                <!-- firstname field -->
+                <div class="input-box">
+                    <span class="details"> FirstName </span>
+                    <input type="text" name='fname' id="name" placeholder= "Enter your first name" required>
+                    <div class="formerror" id="errorFname"></div>
+                </div>
+                <!-- lastname field -->
+                <div class="input-box">
+                    <span class="details"> Last Name </span>
+                    <input type="text" name='lname' id="surname" placeholder="Enter your Last name" required>
+                     <div class="formerror" id="errorLname"></div>
+                </div>
+                <!-- phone no field -->
+                <div class="input-box">
+                    <span class="details"> Phone No </span>
+                    <input type="tel" name="phone" value="+91" maxlength="13" placeholder="Enter your phone no" >
+                    <div class="formerror" id="errorPhone"></div>
+                </div>
+                <!-- Email field -->
+                <div class="input-box">
+                    <span class="details"> Email </span>
+                    <input type="text" name="email" placeholder="Enter your Emailid" required>
+                    <div class="formerror" id="errorEmail"></div>
+                </div>
+                <!-- date of birth field -->
+                <div class="input-box">
+                    <span class="details"> DOB </span>
+                    <input type="date" name="dob" required>
+                </div>
+                <!-- Address field -->
+                <div class="input-box">
+                    <span class="details"> Address </span>
+                    <textarea name="address" id="address" cols="40" rows="3" maxlength="100" placeholder="Enter your Address" required></textarea>
+                </div>
+                <!-- Gender field -->
+                <div class="gender-detail">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label><input type="radio" name="gender" value="male">Male</label>
+                        <label><input type="radio" name="gender" value="female">Female</label>
+                        <label><input type="radio" name="gender" value="not prefer">Prefer not to say</label>
+                        <div class="formerror" id="errorGender"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        
+        <table id="dataTable" border = "1">
+            <tr>
+                <th>Name</th>
+                <th>Phone No</th>
+                <th>Email</th>
+                <th>DOB</th>
+                <th>Address</th>
+                <th>Gender</th>
+            </tr>
+            </table>
+    
+            <h3>Gender Names:</h3>
+        <table id="maleTable" border="1">
+    <tr>
+      <th>Name</th>
+    </tr>
+        </div>
+
+    <script src="js/script.js"></script>
+    </body>
+</html>

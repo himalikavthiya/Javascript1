@@ -1,0 +1,68 @@
+<!DOCtype html>
+<html>
+
+<head>
+    <title>Array Method</title>
+</head>
+
+<body>
+    <script>
+        let text = "";
+        let stu = [{name: 'geeta',
+                    Age: 25,
+                   city: 'surat',
+                    number: 789456123
+        },
+        {name: 'sheeta',
+            Age: 28,
+            city: 'rajkot',
+            number: 8758893095
+        }];
+
+        let obj = {name: 'tina', Age: 30, city: 'Ahemdabad',  number: 7898056123}
+        let obj1 ={name: 'disha',Age: 15, city: 'Atkot',  number: 8075512060}
+        let obj2 ={name: 'akta',Age: 72 ,city: 'Jamnagar' , number: 7562307894}
+        let obj3 ={name: 'hensi',Age: 24 ,city: 'Bhavnagar' , number: 85692307894}
+        let obj4 ={name: 'janki',Age: 19 ,city: 'Morbi' , number: 7862307878}
+
+        //stu.toString(); //get full array
+
+        stu.push(obj)// added data-
+        stu.pop()//delete data
+        console.log(stu)
+     
+        obj.email='1314'
+        //console.log(obj.name)
+       
+        stu.shift();   //first data delete
+        stu.unshift(obj1)   // data add in shifted postion
+
+        let len= stu.length;    //find length of array
+        console.log('Array length: ' ,len)
+
+        stu.splice(1, 2, {name: 'tejal', Age: 18, city: 'rajkot' , number: 7898056123}); //object remove and same postion new add
+        
+        stu.push(obj2,obj3,obj4)
+
+         let new1 = stu.slice(1)//part of slice of array
+        console.log(new1)
+
+        console.log(stu)
+     
+        const points = [40, 100, 1, 5, 25, 10];
+        points.sort(function(a, b){return a - b}); //array sort 
+        points.reverse()   //array reverse
+        document.write(points)
+        
+
+      
+       
+
+
+    </script>
+
+
+</body>
+
+
+</html>

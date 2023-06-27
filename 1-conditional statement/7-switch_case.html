@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Month - using switch_case</title>
+    </head>
+    <body>
+
+        <h1>Month - using switch_case</h1>
+        <h2 id = 'demo'></h2>
+
+        <script>
+        //   const d = new Date();
+        //    let month = d.getMonth();
+        const month =parseInt(prompt("Enter choose 0 to 11 : " ));
+            
+            switch(month){
+            case 0:
+                document.getElementById('demo').innerHTML = 'january';
+                break;
+
+            case 1:
+                document.getElementById('demo').innerHTML ='February';
+                break;
+
+            case 2:
+                document.getElementById('demo').innerHTML ='March';
+                break;
+
+            case 3:
+                document.getElementById('demo').innerHTML ='April';
+                break;
+
+            case 4:
+                document.getElementById('demo').innerHTML = 'May';
+                break;
+
+            case 5:
+                document.getElementById('demo').innerHTML ='June';
+                break;
+
+             case 6:
+                document.getElementById('demo').innerHTML ='July';
+                break;
+
+            case 7:
+                document.getElementById('demo').innerHTML ='Augest';
+                break;
+
+            case 8:
+                document.getElementById('demo').innerHTML ='Sepember';
+                break;
+
+            case 9:
+                document.getElementById('demo').innerHTML ='October';
+                break;
+
+            case 10:
+                document.getElementById('demo').innerHTML ='Navember';
+                break;
+
+            case 11:
+                document.getElementById('demo').innerHTML ='December';
+                break;
+
+            default:
+                document.getElementById('demo').innerHTML ='No any month print';
+
+            }
+           
+        </script>
+        
+    </body>
+</html>

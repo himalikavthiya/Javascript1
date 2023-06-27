@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Type of Function</title>
+    <style>
+       
+    </style>
+
+</head>
+
+<body>
+    <h2>Using Normal function</h2>
+    <button onclick="normal()">show</button>
+    <img src="" style="width:200px;" id="demo" >
+    
+    <h2>parameterized function with argument </h2>
+    <script>
+        // Normal function //without return function
+        function normal(){
+             document.getElementById('demo').src = "http://surl.li/hbclp";
+        }
+       // http://surl.li/hauki
+       
+        // parameterized function [with argument]
+        function Multi(x, y) {
+            if(y === undefined){
+               y = 8;
+            }  
+             return x * y;
+        }
+        document.write("Two value Multi  : " ,Multi(10));
+
+       // parameterized function [without argument]
+        let side = 45;
+        function square(){
+            let area = side * side;
+          document.write('<br>' + "Area of the Square =" + " " + area);
+        }
+        square();
+
+        // return function // auto render [auto call when page is render]
+         let Ans;
+        function sum(a,b){
+            Ans = a + b;
+            return Ans;
+        }
+        sum(20,80);
+        document.write('<br>'+ "Value of sum : " + Ans)
+
+        
+        // let a = toString(10)
+        // // parseInt(a);
+        // console.log(typeof(10,a))
+        
+    </script>
+</body>
+
+</html>

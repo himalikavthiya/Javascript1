@@ -1,0 +1,11 @@
+@media (max-width:584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    form .user-detail .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+       
+    }
+}

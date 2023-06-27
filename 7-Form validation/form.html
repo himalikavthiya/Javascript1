@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>form validation</title>
+</head>
+<style>
+    .formdesing {
+        text-align: center;
+    }
+
+    form {
+        border: 4px solid #c95151;
+        padding: 30px;
+         padding-right: 9%;
+        display: inline-block;
+        border-radius: 20px;
+        box-shadow: 0 8px 8px -4px #533838;
+    }
+
+    .first_n {
+        display: block;
+        margin-bottom: 10px;
+        margin-bottom: 20px;
+        height: 27px;
+    }
+
+    #clear {
+        margin-left: 22px;
+    }
+    #nameerror,
+    #phoneerror{
+        color: #f00606;
+    }
+</style>
+
+<body>
+    <div class="formdesing">
+        <h1 style="color:#c95151; text-transform:uppercase;">Login Form</h1>
+        <form name="myform" action='form.html' class="name1" onsubmit="return validateform()">
+            <span class="first_n"><label> Name:</label>
+                <input type="text" name="fname" size="25" style="height: 30px" method="post" placeholder="Enter your name" id="clear"
+                     required><span id ="nameerror"></span></span>
+
+            <span class="first_n"><label>Phone No:</label>
+                <input type="tel" size="25" style="height: 30px" maxlength="13"  value="+91" name="phoneno" placeholder="Enter your phone_no"
+                    method="post" required><span id ="phoneerror"></span></span>
+
+            <input type="submit" value="Submit" style="height: 30px">
+            <input type="reset" value="Reset" onclick="clearform()" style="height: 30px">
+        </form>
+    </div>
+
+    <script>
+        function clearform() {
+            document.getElementsByClassName("name1").value = "";
+        }
+        function validateform() {
+            //Name validation
+            let Name = document.forms["myform"]["fname"].value;
+            (!isNaN(Name)) ? document.getElementById("nameerror").innerHTML="Number is Not allow" :
+            (Name.length < 3) ? document.getElementById("nameerror").innerHTML="Enter minmum 3  character":
+            (Name.length > 15) ? document.getElementById("nameerror").innerHTML="Enter must be 3 to 15 character":
+            console.log('Name :', Name);
+
+            // phone validation
+
+            const number = document.forms["myform"]["phoneno"].value;
+            (number < 0 || number > 10) ? document.getElementById("phoneerror").innerHTML="Must be filled ten number":
+            (isNaN(number))? document.getElementById("phoneerror").innerHTML="Enter Must be Digit":
+             console.log('Phone No :', number);
+
+            return false;
+           
+        }
+    </script>
+</body>
+
+</html>

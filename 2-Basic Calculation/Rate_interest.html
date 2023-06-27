@@ -1,0 +1,35 @@
+<!-- Find Rate of Interest -->
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Rate of interest</title>
+</head>
+
+<body>
+    <h1>Rate of Interest</h1>
+    <h2 id='rate'><h2>
+
+        <script>
+            
+            
+            function inputvalue(){
+                const p =parseFloat(prompt("Enter principal amount : "));
+                const r =parseFloat(prompt("Enter rate of interest :"));
+                const n =parseFloat(prompt("Enter Time duration :"));
+                interest(p,r,n);
+                
+            }
+            inputvalue();
+
+            function interest(p,r,n){
+               const inte = (p * r * n)/100;
+               document.getElementById('rate').innerHTML ='Total Rate of Interest :' + inte;
+            }
+
+            
+        </script>
+</body>
+
+</html>

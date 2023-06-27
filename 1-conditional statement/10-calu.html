@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <h2 id ='cal0'></h2>
+
+        <script>
+            const cal =prompt('Enter Choose Operator + , - , * , / , %:');  
+            const a =parseInt(prompt('Enter First Number : '));
+            const b =parseInt(prompt('Enter Second Number : '));
+            let Ans;
+
+            switch(cal){
+                case '+':
+                    Ans = a + b;
+                    document.getElementById('cal0').innerHTML = ('A + B =') + Ans ;
+                    break;
+
+                case '-':
+                     Ans = a - b;
+                     document.getElementById('cal0').innerHTML = ('A - B =') + Ans ;
+                     break;
+
+                case '*':
+                    Ans = a * b;
+                    document.getElementById('cal0').innerHTML = ('A * B =') + Ans ;
+                    break;
+                    
+                case '/':
+                    Ans = a / b;
+                    document.getElementById('cal0').innerHTML = ('A / B =') + Ans ;
+                    break;
+
+                case '%':
+                    Ans = a % b;
+                    document.getElementById('cal0').innerHTML = ('A % B =') + Ans ;
+                    break;
+
+                default:
+                    document.getElementById('cal0').innerHTML =('Invalid operator');
+            }   
+          
+        </script>
+    </body>
+
+</html>
+    

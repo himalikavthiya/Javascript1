@@ -1,0 +1,37 @@
+<!-- javascript Program to two variable addition, subtraction, multiplication, division .(compulsory user input) -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calulation</title>
+</head>
+
+<body>
+    <h1>Basic Calulation</h1>
+    <h2 id="addi1"></h2>
+    <h2 id="sub1"></h2>
+    <h2 id="multi1"></h2>
+    <h2 id="divi1"></h2>
+    <h2 id="modu1"></h2>
+
+    <script>  
+        const a = parseInt(prompt('Enter First Number : '));
+        const b = parseInt(prompt('Enter Second Number : '));
+
+        function basic(a, b) {
+            let addi = a + b;
+            let sub = a - b;
+            let multi = a * b;
+            let divi = a / b;
+            let modu = a % b;
+            document.getElementById('addi1').innerHTML = 'Addition' + a + '+' + b + '=' + addi;
+            document.getElementById('sub1').innerHTML = 'Subctration' + a +  '-' + b + '=' + sub;
+            document.getElementById('multi1').innerHTML ='Multiplication' + a + '*' + b + '=' + multi;
+            document.getElementById('divi1').innerHTML = 'Division' + a + '/' + b + '=' + divi;
+            document.getElementById('modu1').innerHTML = 'Modulas' + a + '%' + b + '=' + modu;
+             
+        }
+        basic(a,b);
+    </script>
+</body>
+</html>

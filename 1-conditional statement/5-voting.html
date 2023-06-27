@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting</title>
+</head>
+<body>
+    
+    <h1>Who is Eligible for Voting?</h1>
+    <h2 id="demo"></h2>
+    
+    <script>
+        let age = parseInt(prompt("Enter Your Age for Voting :"));
+
+        if(age >= 18){
+            document.getElementById('demo').innerHTML = 'Your age is' +  " " + age +" " + 'for Eligible voting';
+        
+        }else{
+            document.getElementById('demo').innerHTML = 'Your age is' + " " + age +" " + ' not for Eligible voting';
+        }
+
+    </script>
+
+</body>
+</html>

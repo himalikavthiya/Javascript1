@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Constrcator</title>
+</head>
+
+<body>
+    <h1>Constractor</h1>
+    <script>
+
+        function Emp(Name, age, post) { //using this keyword
+            this.firstName = Name;
+            this.Age = age;
+            this.Post = post;
+        }
+
+        const detail = new Emp("nishant", 25, "Manager"); //using new keyword
+        const detail1 = new Emp("binal", 23, "Sales");
+        detail.city = 'surat'; //add new key 
+
+        console.log(detail) // full object get
+        console.log(detail.Post) // particular value get
+
+        console.log("🚀 ~ file: constractor.html:24 ~ detail1-firstName:", detail1.firstName) // particular value get
+
+        console.log("🚀 ~ file: constractor.html:25 ~ detail-city:", detail.city)// particular value get
+
+        //using for in  array get object
+        let array = [{ no: 100, name: 'binal', age: 50 },
+        { no: 101, name: 'geeta', age: 58 }];
+
+        for (let x in array) {
+            console.log(array[x])
+        }
+
+        //create new object
+        const Food = {
+            food: "pizza",
+            price: 205,
+            quality: "good",
+            set avai(avai) {
+                this.available = avai;
+            }
+        };
+        // Set an object property using a setter
+        Food.avai = "yes";
+        console.log("Food Avaiblity: " +Food.available)
+
+        //using for in object get
+        for (let key in Food) {
+            console.log("Food deatil :" + key + ":" + Food[key])
+        }
+
+    </script>
+</body>
+
+</html>

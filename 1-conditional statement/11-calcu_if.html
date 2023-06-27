@@ -1,0 +1,49 @@
+ <!-- JavaScript program to create basic calculator using ledder if else. -->
+ <!DOCTYPE html>
+ <html>
+ <head>
+    <title>calculator using ledder if else</title>
+    <style>
+        h2{
+            color:#0000ff;
+        }
+
+    </style>
+ </head>
+ <body>
+    <h1> Basic Calculator</h1>
+    <h2 id="cal0"></h2>
+
+        <script>
+            const cal =prompt('Choose Operator (+ , - , * , / , %:)');  
+            const a =parseFloat(prompt('Enter 1st value : '));
+            const b =parseFloat(prompt('Enter 2nd value : '));
+            let Ans;
+
+            if(cal == '+'){
+                Ans = a + b;
+                document.getElementById('cal0').innerHTML =(`${a} + ${b} = ${Ans}`);
+                //document.getElementById('cal0').innerHTML = ('A + B =') + Ans ;
+                
+            }else if(cal == '-'){
+                Ans = a - b;
+                document.getElementById('cal0').innerHTML = (`${a} - ${b} = ${Ans}`) ;
+
+            }else if(cal == '*'){
+                Ans = a * b;
+                document.getElementById('cal0').innerHTML = (`${a} * ${b} = ${Ans}`) ;
+
+            }else if(cal == '/'){
+                Ans = a / b;
+                document.getElementById('cal0').innerHTML = (`${a} / ${b} = ${Ans}`) ;
+
+            }else if(cal =='%'){
+                Ans = a % b;
+                document.getElementById('cal0').innerHTML = (`${a} % ${b} = ${Ans}`) ;
+            }else{
+                document.getElementById('cal0').innerHTML =('Invalid operator');
+            }
+
+       </script>
+ </body>
+ </html>

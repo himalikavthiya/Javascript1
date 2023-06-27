@@ -1,0 +1,35 @@
+<!-- Find Triangle area -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Triangle area</title>
+</head>
+
+<body>
+    <h1>Triangle area</h1>
+    <h2 id ="tri"></h2>
+
+    <script>
+        
+        const base = parseFloat(prompt("Enter Base of tringle "));
+        const height = parseFloat(prompt("Enter height of tringle "));
+
+        if(base ==0 || height ==0){
+
+            alert('Fill the both value');
+             document.write("don't find  triangle area");
+
+        }
+
+        function tringle(){
+
+            let Tri = (1/2) * base * height;
+            document.getElementById('tri').innerHTML = 'Area of Tringle : ' + Tri;
+
+        }
+        tringle();
+    </script>
+</body>
+
+</html>

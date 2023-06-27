@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Useing If-else if Day Print</h1>
+     <h2 id ="day1"></h2>
+    <h3 id = "day0"></h3>
+
+
+    <script>
+         document.getElementById('day1').innerHTML ='Plz Choose your  Day Charater same like (S,M,T,W,Tu,F,Sa,s,m,t,w,tu,f,sa)';
+        const String =prompt("Enter choose day first  character : ");
+
+        if(String == 'S' || String == 's'){
+            document.getElementById('day0').innerHTML = 'Sunday';
+        }else if(String == 'M' || String == 'm'){
+            document.getElementById('day0').innerHTML ='Monday';
+        }else if(String == 'T' || String == 't'){
+            document.getElementById('day0').innerHTML ='Tuseday';
+        }else if(String == 'W' || String == 'w'){
+            document.getElementById('day0').innerHTML ='Wednesday';
+        }else if(String == 'th' || String == 'Tu'){
+            document.getElementById('day0').innerHTML = 'Thursday';
+        }else if(String == 'f' || String == 'F'){
+            document.getElementById('day0').innerHTML ='Friday';
+        }else if(String == 'Sa' || String == 'sa'){
+            document.getElementById('day0').innerHTML ='Saturday';
+        }else{
+            document.getElementById('day0').innerHTML =' This Day character is not use';
+        }
+    </script>
+</body>
+</html>

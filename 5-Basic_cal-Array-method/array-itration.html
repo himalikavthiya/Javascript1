@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Array itreation</title>
+</head>
+
+<body>
+    <h1>Array Itreation</h1>
+    <script>
+        const number = [112, 211, 309, 477, 574, 636];
+
+        //using forEach
+        document.write('Get using a ForEach array : ')
+        number.forEach(getarray);
+        function getarray(item, index) {
+            document.write('<br>' + index + ':' + " " + item);
+        }
+
+        //using reduce
+        let ans = number.reduce(myFunction);
+        function myFunction(item, value) {
+            return item + value;
+        }
+        document.write('<br>' + '<br>' + 'Total array value is : ', ans)
+
+        //Using arrayMap
+        const newarray = number.map(function numMultIdx(value, idx) {
+            return value * idx; //index multiplay by value
+        })
+        document.write('<br>' + '<br>' + 'Using arrayMap new array : ' + newarray);//new array print
+
+        //using flatmap
+        const result = number.flatMap((num) => (num === 477 ? [2, 2] : 1));
+        document.write('<br>' + '<br>' + 'Using FlatMap array : ' + result);
+
+        //get new array using array filter
+        const evenNo = number.filter(num => num % 2 == 0);
+        document.write('<br>' + '<br>' + 'get new array using array filter : ' + evenNo);
+
+        //Using Arrayfind
+        let evenNumber = number.find(num => num % 2 == 0)
+        document.write('<br>' + '<br>' + "Find Array Element : " + evenNumber)
+
+        //Using includes
+        document.write('<br>' + '<br>' + 'Using includes : ' + number.includes(112)); //value check in array return true and false
+
+        //using key()
+        const no = number.keys();
+        document.write('<br>' + '<br>' + 'Using Key find index of array :')
+        for (const key of no) {
+            document.write('<br>' + key)
+        }
+
+        //Using Indexof and Lastindexof
+        const arr12 = ['ajay1', 'vibhu', 'ajay', 'himali', 'fejal', 'himali','vibhuti','himali'];
+
+        
+        console.log(arr12.indexOf('himali'));
+        console.log(arr12.indexOf('ajay'));
+        console.log(arr12.lastIndexOf('ajay'));
+        console.log(arr12.indexOf('himali',6));
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

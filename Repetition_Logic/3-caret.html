@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Power of value</title>
+</head>
+
+<body>
+    <h1>Power of Value</h1>
+    <script>
+      
+        const b =parseInt(prompt("Enter base value :"));
+        const e =parseInt(prompt("Enter Exponent value  :"));
+        
+        pow = 1;
+
+        function power(b,e){
+
+            for(i = 0; i<e; i++){
+                pow = pow * b;
+            }
+            return pow;
+        }
+        document.write('Final value ' + b + '^' + e + "=" ,power(b,e));
+
+    </script>
+
+
+</body>
+
+</html>
