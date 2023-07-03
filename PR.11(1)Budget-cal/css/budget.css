@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, #eeaeca 0%, #143b69 100%);
+    user-select: none;
+}
+
+.budget-header {
+    width: 30%;
+    font-size: 40px;
+    font-weight: 600;
+    color: #e6e6ef;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.wrapper {
+    width: 90%;
+    font-size: 16px;
+    max-width: 43.75em;
+    margin: 0 auto;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.container {
+    width: 100%;
+}
+
+.sub-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: 0.6em; */
+}
+
+.wrapper h3 {
+    color: #363d36;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+.container input {
+    display: block;
+    width: 100%;
+    padding: 0.6em 0.3em;
+    border: 1px solid #d0d0d0;
+    border-radius: 0.3rem;
+    color: #414a67;
+    outline: none;
+    font-weight: 400;
+    margin-bottom: 0.6em;
+}
+
+.container input:focus {
+    border-color: #414a67;
+}
+
+.total-amount-container,
+.user-amount-container {
+    background-color: #ffffff;
+    padding: 1.25em 0.9em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.20);
+}
+
+.output-container {
+    background-color: #143b69;
+    color: #ffffff;
+    border-radius: 0.3em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.20);
+    margin: 2em 0;
+    padding: 1.2em;
+}
+
+.output-container p {
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+
+#addNewBudgetbtn {
+    background-color: #eeaeca;
+    color: #143b69;
+}
+
+.output-container span {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #e5e5e5;
+}
+
+.submit {
+    font-size: 1em;
+    margin-top: 10px;
+    background-color: #143b69;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 10px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+ 
+.product {
+    font-weight: 500;
+    color: #363d55;
+}
+
+.amount {
+    color: #414a67;
+    margin-left: 20%;
+}
+.expense-item{
+    display: flex;
+    justify-content: space-around;
+}
+#errormsg,
+#error{
+    color:#e23131;
+}
+
+.list {
+    background-color: #ffffff;
+    padding: 1.8em 1.2em;
+    box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.20);
+    border-radius: 0.7em;
+    list-style: none;
+}
+li{
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    font-size: 1em;
+    margin-top: 10px;
+    background-color: #eeaeca;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 10px 12px;
+    border-radius: 6px;
+    cursor: pointer
+}
+.list span{
+    padding: 15px 0px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculation </title>
+    <link rel="stylesheet" href="css/budget.css">
+</head>
+<body>
+    <h1 class="budget-header">-| Budget Calculation |-</h1>
+    <div class="wrapper">
+        <div class="container">
+            <div class="sub-container">
+                <div class="total-amount-container">
+                    <!-- budget -->
+                    <h3>Budget</h3>
+                    <input type="number" id="setBudgetInput" placeholder="Enter Total Amount" />
+                    <p id="error"></p>
+                    <button class="submit" id="setBudgetBtn">set Budget</button>
+                </div>
+                <!-- Expenditure -->
+                <div class="user-amount-container">
+                    <h3>Expenses</h3>
+                    <input type="text" name="" class="product-title" id="expenseDes" placeholder="Enter Title of Product" />
+                    <input type="number" name="" id="expenseAmount" placeholder="Enter Cost of Product">
+                    <p id="errormsg"></p>
+                    <button class="submit" id="addExpenseBtn">Add Expenses</button>
+                </div>
+            </div>
+            <!-- output -->
+            <div class="output-container flex-space">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="totalamount">0</span>
+                    <button class="submit" id="addNewBudgetbtn">Add Budget</button>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="totalExpenses">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balanceAmount">0</span>
+                </div>
+            </div>
+        </div>
+         <!-- list -->
+        <div class="list">
+            <h3>Expense List</h3>
+            <div id="list">
+                
+            </div>
+        </div>
+        
+    </div>
+    <script src="js/budget.js"> </script>
+</body>
+</html>
