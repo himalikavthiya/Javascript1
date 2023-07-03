@@ -1,0 +1,180 @@
+:root {
+    --back-color: #c5e4e7;
+    --input-color: #00494d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--back-color);
+    font-family: 'Space Mono', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    margin-block: 30px;
+}
+
+.header img {
+    width: 5%;
+    height: 5%;
+    border-radius: 50%;
+}
+
+.topSection {
+    padding: 30px;
+    width: 50%;
+}
+
+.mainContainer {
+    background-color: #fff;
+    border-radius: 20px;
+    width: 920px;
+    height: 490px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.label {
+    font-size: 14px;
+    color: #5e7a7d;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.inputContainer {
+    position: relative;
+}
+
+.inputContainer>input {
+    margin-block: 0 40px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #b7d3d3;
+    color: var(--input-color);
+    text-align: right;
+    font-size: 18px;
+    font-weight: 700;
+   
+}
+
+.inputContainer .fa-dollar-sign {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    opacity: 0.6;
+}
+
+.btnContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-bottom: 40px;
+}
+
+.btnContainer > button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--input-color);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btnContainer > button.active {
+    background-color: #c5e4e7;
+    color: var(--input-color);
+}
+.btn{
+    width: 150px;
+}
+
+.btnContainer>input {
+    width: 82%;
+    border: none;
+    padding: 10px;
+    background-color: #f4fafa;
+    border-radius: 5px;
+}
+.peopleWrapper {
+    position: relative;
+}
+
+.peopleWrapper > input {
+    margin-block: 0px 40px;
+    padding : 10px;
+    width : 100%;
+    border : none;
+    border-radius: 5px;
+    background-color : #7f9c9f;
+    text-align: right;
+    cursor: pointer;
+    color:var(--input-color);
+    font-size: 18px;
+    font-weight: 700;
+}
+.peopleWrapper .fa-person{
+    position: absolute;
+    top:12px;
+    left:15px;
+    opacity: 0.6;
+}
+.bottomSection{
+    width: 50%;
+    background-color: #00494d;
+    border: none;
+    border-radius: 20px;
+    padding-block : 50px 20px;
+    padding-inline : 20px;
+    margin-block : 35px;
+    margin-right: 30px;
+    position: relative;
+}
+.desc {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 57px;
+    padding-inline : 40px;
+}
+
+.desc > p{
+    font-size: 20px;
+    color : #fff;
+    font-weight: 700;
+}
+
+.desc > p > span {
+    opacity: 0.5;
+}
+
+.desc > div {
+    color : #7f9c9f;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.reset {
+    padding : 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7f9c9f;
+    font-size: 16px;
+    color :var(--input-color);
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    bottom: 40px;
+    left : 40px;
+    width : 355px;
+}

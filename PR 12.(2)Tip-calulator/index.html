@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip_Cal</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/tip_cal.css">
+</head>
+<body>
+  <div class="header">
+    <img src="img/logo.png" alt="logo" />
+  </div>
+  <div class="mainContainer">
+    <div class="topSection">
+      <!--Start lable for bill -->
+      <div class="label">
+        <label for="input">Bill</label>
+      </div>
+      <div class="inputContainer">
+        <i class="fa fa-dollar-sign"></i>
+        <input type="number" min="1" placeholder="0.0" id="input">
+      </div>
+      <!-- End lable for bill -->
+
+      <!-- no of people -->
+      <div class="label">
+        <label for="people">Number of People</label>
+        <p id="error"></p>
+      </div>
+
+      <div class="peopleWrapper">
+        <i class="fa fa-person"></i>
+        <input type="number" min="0" max="10" placeholder="1" id="people">
+      </div>
+      <!-- end no of people -->
+
+      <!-- button code -->
+      <div class="label">
+        <label for="customTip"> Select Tip % </label>
+      </div>
+      <div class="btnContainer">
+        <button class="btn" onclick="hadleButton('5')">5%</button>
+        <button class="btn" onclick="hadleButton('10')" value="10">10%</button>
+        <button class="btn" onclick="hadleButton('15')" value="15">15%</button>
+        <button class="btn" onclick="hadleButton('25')" value="25">25%</button>
+        <button class="btn" onclick="hadleButton('50')" value="50">50%</button>
+        <input type="number" min="5" max="50" placeholder="Custom" id="customTip" />
+      </div>
+      <!--  button end -->
+    </div>
+    <!-- main container end -->
+
+    <!-- start Bottom section  -->
+    <div class="bottomSection">
+      <div class="Amount">
+        <div class="desc">
+          <p>Tip Amount <br /> <span>/ person</span></p>
+          <div class="tipValue" id="tipPercentage">$ 0</div>
+        </div>
+        <div class="desc">
+          <p>Total <br /> <span>/ person</span></p>
+          <div class="tipValue" id="tipValue">$ 0</div>
+        </div>
+      </div>
+      <button class="reset">RESET</button>
+    </div>
+    <!-- End Botton section -->
+  </div>
+
+  <script src="js/all.min.js"></script>
+  <script src="js/tip_cal.js"></script>
+</body>
+
+</html>
